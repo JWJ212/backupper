@@ -35,7 +35,7 @@ ip= #ip of remote machine#
 port= #port number for scp#
 
 7z a "World Backup: $time" ./world #Put in your own worldname if desired
-scp -P ./*.7z $ip:/backup/ #you can change this dir to wherever you want
+scp -P $port ./*.7z $ip:/backup/ #you can change this dir to wherever you want
 rm *.7z
 
 
